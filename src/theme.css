@@ -1,0 +1,49 @@
+/**
+ * ⚠️ THEME CONFIGURATION — Tailwind v4
+ * Add custom theme values INSIDE the @theme { } block below.
+ * Do NOT nest @media, @layer, or other at-rules inside @theme.
+ * Do NOT create a tailwind.config.js — all theming is done here.
+ * Keep all { } braces balanced.
+ */
+@theme {
+	/* Janeviz Maritime Branding - Instagram-ready */
+	--color-primary: #1F3A5F; /* Dunkelblau - Vertrauen & Tiefe */
+	--color-primary-foreground: #FFFFFF;
+
+	--color-secondary: #2FA4A9; /* Meerestürkis - Frische & Ostsee-Vibe */
+	--color-secondary-foreground: #FFFFFF;
+
+	--color-destructive: #C53030;
+	--color-destructive-foreground: #FFFFFF;
+
+	--color-muted: #EBE9E4; /* Soft warm gray */
+	--color-muted-foreground: #5A6A7A;
+
+	--color-accent: #D6B98C; /* Sand/Beige - Gemütlichkeit */
+	--color-accent-foreground: #1F3A5F;
+
+	--color-success: #3D8B6E;
+	--color-success-foreground: #FFFFFF;
+
+	--color-warning: #D97706;
+	--color-warning-foreground: #FFFFFF;
+
+	--color-border: #E1DED8;
+	--color-input: #E1DED8;
+	--color-ring: #2FA4A9;
+
+	--color-background: #F5F3EF; /* Off-White - Clean & modern */
+	--color-foreground: #1F3A5F;
+	--color-card: #FFFFFF;
+	--color-card-foreground: #1F3A5F;
+
+	/* Radius */
+	--radius-sm: 0.375rem;
+	--radius-md: 0.5rem;
+	--radius-lg: 0.75rem;
+	--radius-xl: 1rem;
+
+	/* Fonts - Serif + Sans Serif Combo */
+	--font-sans: 'Poppins', system-ui, sans-serif;
+	--font-display: 'Playfair Display', Georgia, serif;
+}

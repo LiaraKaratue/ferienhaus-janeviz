@@ -1,0 +1,31 @@
+{
+  "summary": "Admin-Automatisierung & Angebote für Wiederkommer",
+  "todos": [
+    {
+      "id": 1,
+      "description": "Automatisierte Buchungsbestätigung mit One-Click (Zugang + Vertrag + Willkommensnachricht)",
+      "files": [],
+      "status": "complete"
+    },
+    {
+      "id": 2,
+      "description": "Admin-Seiten: Kunden, Rechnungen, Angebote verwalten",
+      "files": [],
+      "status": "complete"
+    },
+    {
+      "id": 3,
+      "description": "Gästeportal: Angebote-Seite für Wiederkommer",
+      "files": [],
+      "status": "complete"
+    },
+    {
+      "id": 4,
+      "description": "Routen & Integration",
+      "files": [],
+      "status": "complete"
+    }
+  ],
+  "createdAt": "2026-08-11T17:17:54.828Z",
+  "updatedAt": "2026-08-11T17:26:31.908Z"
+}
