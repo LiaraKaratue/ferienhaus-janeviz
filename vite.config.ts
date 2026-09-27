@@ -7,6 +7,7 @@ import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react-swc';
 import { existsSync, constants as fsConstants } from 'fs';
 import { access, readFile } from 'fs/promises';
+import os from 'os';
 import path from 'path';
 import pino from 'pino';
 import { createLogger, defineConfig, PluginOption, type HotPayload, type Plugin, type Update, type ViteDevServer } from 'vite';
@@ -18,7 +19,8 @@ const isLocalDev = existsSync(localDevToolsPath);
 const defaultLogger = createLogger();
 
 // Create Pino logger that writes to both console and file
-const logDestination = pino.multistream([{ stream: process.stdout }, { stream: pino.destination('/tmp/dev.log') }]);
+// Use the OS temp directory so this works cross-platform (Windows/macOS/Linux)
+const logDestination = pino.multistream([{ stream: process.stdout }, { stream: pino.destination(path.join(os.tmpdir(), 'dev.log')) }]);
 
 const logger = pino(
 	{
